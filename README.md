@@ -1,74 +1,49 @@
-# AxionRay Assignment – Task 1: Data Tagging & Classification
+# AxionRay Assignment – Data Analysis & Tagging
 
-This repository contains my completed solution for **Task 1** of the AxionRay Data Analyst assignment.  
-The objective of this task was to tag free-text complaint data into structured categories using a strict, predefined taxonomy.
-
----
-
-## 📌 Task Description
-
-The dataset included:
-- Complaint descriptions  
-- Causes  
-- Corrective actions  
-- A taxonomy file with allowed labels  
-
-The goal of Task 1 was to classify each record into:
-- **Root Cause**
-- **Symptom Condition(s)**
-- **Symptom Component(s)**
-- **Fix Condition(s)**
-- **Fix Component(s)**
-
-All tags were required to be selected **exclusively from the provided taxonomy**, with no new terms introduced.
+This repository contains my solution for the AxionRay Data Analyst assignment, covering **Task 1 (Data Tagging)** and **Task 2 (Data Analysis and Insights Generation)**.
 
 ---
 
-## 🧠 Approach
+## 🧩 Task 1: Data Tagging
 
-- Carefully read each complaint, cause, and correction to understand the issue.
-- Used **data validation drop-down lists** in Excel to ensure:
-  - Only taxonomy-approved terms were selected  
-  - No new labels or typos were introduced  
-  - Consistency in classification
-- Applied **closest-match mapping** when the text didn’t exactly align with a taxonomy term.
-- Used **“Not Mentioned”** when a component didn’t exist in the taxonomy list.
-- Filled all required columns, including secondary and tertiary conditions/fixes where applicable.
+Task 1 focused on converting unstructured service data into structured categories using a predefined taxonomy.
 
----
+### Approach
+- Analyzed complaint, cause, and correction fields
+- Tagged records using only approved taxonomy values
+- Used data validation to ensure consistency and avoid new labels
+- Applied closest-match logic where exact terms were unavailable
 
-## 📊 Deliverables
-
-### Files included:
-- **Tagged_Task1.xlsx** — Fully tagged dataset  
-- **Summary_Report.md / .pdf** — Explanation of approach + insights  
-- Any supporting files that were provided in the assignment  
+### Outputs
+- Tagged dataset (Excel)
+- Summary report explaining tagging logic and insights
 
 ---
 
-## 🔍 Key Insights from the Data
+## 📊 Task 2: Data Analysis & Insights
 
-- Many issues were caused by **assembly inconsistencies** (e.g., loose fittings, missing components).
-- **Leak-related failures** (oil, hydraulic, product) were common across multiple records.
-- Several failures were **sensor-related**, often due to contamination or misalignment.
-- These problems point toward opportunities for stronger **quality checks**, better **installation procedures**, and improved **pre-delivery inspections**.
+Task 2 focused on understanding the dataset, cleaning the data, generating insights, and extracting meaningful tags from free-text fields.
 
----
+### Key Steps
+- Performed column-wise analysis (data types, distributions, significance)
+- Cleaned data by handling missing values, standardizing text, and validating numeric fields
+- Created visualizations (bar and line charts) to highlight key patterns
+- Generated tags from free text to capture failure conditions, components, and repair actions
 
-## 🛠 Tools Used
-
-- Microsoft Excel  
-- Data Validation  
-- Manual tagging based on taxonomy interpretation  
-
----
-
-## 📝 Task 2 (to be added later)
-
-This repository will be updated with Task 2 once completed.
+### Key Insights
+- Leak- and sensor-related issues occur frequently
+- A small number of components contribute to most failures
+- Most repairs involve replacement or tightening, indicating installation or early-life quality issues
 
 ---
 
-## 📬 Contact
+## 📁 Repository Contents
+- Cleaned and tagged datasets (Excel)
+- Python scripts used for analysis and visualization
+- Summary reports for Task 1 and Task 2
 
-Feel free to reach out if you need additional information about this submission.
+---
+
+## ✅ Conclusion
+This project demonstrates the ability to structure unorganized data, apply exploratory analysis, generate actionable insights, and present results clearly for stakeholders.
+
